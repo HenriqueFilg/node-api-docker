@@ -1,0 +1,29 @@
+o que usei no teste de backend da quikdev
+
+Utilizei o terminal do PowerShell pra adicionar módulos e o Insomnia para o teste do código!
+
+
+Na função store, usei o método create do Mongoose, que serve pra recer como parâmetro o corpo da nossa requisição
+
+Na função index, usei o método find, que quando usasse sem parâmetros, retornava todos os dados da minha coleção.
+
+Na parte de autenticação do token, usei o jsonwebtoken
+	ou seja:
+		const token = jwt.sign({ id: user.id }), 
+Por que o Id é uma informação do usuário que sempre tem que ser diferente um do outro!
+
+Gerei um Hashing único e deixei dentro do arquivo auth.json na pasta Config
+
+Gerei um Hashing MD5 utilizando texto aleartório com letras e números da minha aplicação. Para quando outra aplicação gerar um token jwt, não será o mesmo tipo de token, 
+
+Fiz várias verificações de autenticação usando a tag 'if', pois nos cursos que fiz de Full Stack, ensinam que é importante usar no Back-end, por que se tiver um erro mínimo no token, o erro já vai ser acusado, e além disso essas validações com 'if' utilizam muito pouco processador da máquina
+
+
+Criei um index.js dentro da pasta Controllers, pra sempre que eu criar um novo, eu importo todos de uma vez só para dentro do arquivo
+
+Deixei o campo Password criado, caso quisesse fazer mais uma caixa para a cadastro da senha, como não é o caso, não executei!
+
+Criei um script dentro do meu arquivo MakeFile, que vai ficou responsável pelo meu Docker Compose up, e assim juntar com as variáveis de ambiente
+
+Determinei um tamanho máximo que um arquivo pode atingir dentro do container, pra não consumir muito poder da máquina do usuário
+
